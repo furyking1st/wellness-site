@@ -1,0 +1,114 @@
+<!--
+  TODO placeholders:
+  - Telegram URL: href="#"
+  - Zalo URL: href="#"
+  - Facebook URL: href="#"
+  - Phone number/link: href="#"
+-->
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liên hệ Wellness</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .wellness-footer {
+        padding: 24px 20px;
+        background: #f4f8f7;
+        border-top: 1px solid #dce8e5;
+      }
+
+      .wellness-footer__inner {
+        width: min(100%, 720px);
+        margin-inline: auto;
+      }
+
+      .wellness-footer__heading {
+        margin: 0 0 14px;
+        color: #294a45;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .wellness-footer__links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 16px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-style: normal;
+      }
+
+      .wellness-footer__links a {
+        display: inline-block;
+        padding-block: .6rem;
+        color: #3f6f68;
+        line-height: 1.5;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      .wellness-footer__links a:hover,
+      .wellness-footer__links a:focus-visible {
+        color: #315f58;
+      }
+
+      .wellness-footer__links a:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 3px;
+      }
+
+      @media (min-width: 640px) {
+        .wellness-footer {
+          padding-block: 28px;
+        }
+
+        .wellness-footer__links {
+          grid-template-columns: repeat(4, max-content);
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer class="wellness-footer">
+      <div class="wellness-footer__inner">
+        <h2 class="wellness-footer__heading">Kết nối với chúng tôi</h2>
+        <nav aria-label="Liên hệ">
+          <ul class="wellness-footer__links">
+            <li>
+              <!-- TODO: Replace with the confirmed Telegram URL. -->
+              <a href="#">Nhắn qua Telegram</a>
+            </li>
+            <li>
+              <!-- TODO: Replace with the confirmed Zalo URL. -->
+              <a href="#">Nhắn qua Zalo</a>
+            </li>
+            <li>
+              <!-- TODO: Replace with the confirmed Facebook URL. -->
+              <a href="#">Theo dõi Facebook</a>
+            </li>
+            <li>
+              <!-- TODO: Replace with the confirmed phone number and tel URL. -->
+              <a href="#">Gọi điện thoại</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
