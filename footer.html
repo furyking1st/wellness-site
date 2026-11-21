@@ -48,11 +48,15 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px 16px;
         margin: 0;
+        padding: 0;
+        list-style: none;
         font-style: normal;
       }
 
       .wellness-footer__links a {
-        color: #527f78;
+        display: inline-block;
+        padding-block: .6rem;
+        color: #3f6f68;
         line-height: 1.5;
         text-decoration-thickness: 1px;
         text-underline-offset: 3px;
@@ -84,16 +88,26 @@
     <footer class="wellness-footer">
       <div class="wellness-footer__inner">
         <h2 class="wellness-footer__heading">Kết nối với chúng tôi</h2>
-        <address class="wellness-footer__links" aria-label="Thông tin liên hệ">
-          <!-- TODO: Replace with the confirmed Telegram URL. -->
-          <a href="#">Nhắn qua Telegram</a>
-          <!-- TODO: Replace with the confirmed Zalo URL. -->
-          <a href="#">Nhắn qua Zalo</a>
-          <!-- TODO: Replace with the confirmed Facebook URL. -->
-          <a href="#">Theo dõi Facebook</a>
-          <!-- TODO: Replace with the confirmed phone number and tel URL. -->
-          <a href="#">Gọi điện thoại</a>
-        </address>
+        <nav aria-label="Liên hệ">
+          <ul class="wellness-footer__links">
+            <li>
+              <!-- TODO: Replace with the confirmed Telegram URL. -->
+              <a href="#">Nhắn qua Telegram</a>
+            </li>
+            <li>
+              <!-- TODO: Replace with the confirmed Zalo URL. -->
+              <a href="#">Nhắn qua Zalo</a>
+            </li>
+            <li>
+              <!-- TODO: Replace with the confirmed Facebook URL. -->
+              <a href="#">Theo dõi Facebook</a>
+            </li>
+            <li>
+              <!-- TODO: Replace with the confirmed phone number and tel URL. -->
+              <a href="#">Gọi điện thoại</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>
